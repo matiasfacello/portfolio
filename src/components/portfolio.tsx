@@ -23,7 +23,7 @@ function Portfolio() {
           name="Cartagena"
           tech="Adobe Photoshop"
           description="Cartagena is a local food store. Logo, Brochures and Wall boards were made making a rustic but modern stetic for the shop"
-          visit="./cartagena.pdf"
+          visit="https://files.pristineshock.com/wl/?id=XL31gkGoGEWdUMWy9MDRg6N9cKRmSHIo&fmode=open"
           image
         />
       </div>

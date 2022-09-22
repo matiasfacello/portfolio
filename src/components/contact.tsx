@@ -37,7 +37,11 @@ function Contact() {
           </a>
         </li>
         <li className="flex-[0_1_100px]">
-          <a href="./resume.pdf" target="_blank" className="flex flex-col items-center justify-center py-4 transition rounded hover:text-blue-300">
+          <a
+            href="https://files.pristineshock.com/wl/?id=kyyQwKE4GiD2DAheuzyjHy3MJ3DhipCA&fmode=open"
+            target="_blank"
+            className="flex flex-col items-center justify-center py-4 transition rounded hover:text-blue-300"
+          >
             <FontAwesomeIcon icon={faNewspaper} fixedWidth size="2xl" className="pb-2" />
             Resume
           </a>

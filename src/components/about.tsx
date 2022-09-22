@@ -1,22 +1,28 @@
 import Icon from "./ui/icon";
+import imgMe from "../assets/me.png";
 
 function About() {
   return (
     <section id="about" className="container min-h-screen px-6 m-auto">
       <h1 className="pt-24 mt-16 text-4xl">About me</h1>
-      <div className="my-6">
-        <p className="mb-6">
-          I am a young man who thinks of a solution for every problem, always trying to find the best method to achieve it. Efficiency, compromise,
-          and order are the most valuable keywords in my life.
-        </p>
-        <p className="mb-6">
-          Computers were always a big part of my life, and I love working with them. I learned to write code as a hobby, but now I believe I am ready
-          to be a professional.
-        </p>
-        <p className="mb-6">
-          My wish is to work with a company to grow as a professional and improve my skills. In return, I offer all my commitment and the best of my
-          qualities.
-        </p>
+      <div className="flex flex-col-reverse justify-between text-center md:text-left md:flex-row md:items-start">
+        <div className="my-6 md:max-w-4xl md:pr-12">
+          <p className="mb-6">
+            I am a young man who thinks of a solution for every problem, always trying to find the best method to achieve it. Efficiency, compromise,
+            and order are the most valuable keywords in my life.
+          </p>
+          <p className="mb-6">
+            Computers were always a big part of my life, and I love working with them. I learned to write code as a hobby, but now I believe I am
+            ready to be a professional.
+          </p>
+          <p className="mb-6">
+            My wish is to work with a company to grow as a professional and improve my skills. In return, I offer all my commitment and the best of my
+            qualities.
+          </p>
+        </div>
+        <div className="p-6 lg:p-0 md:flex-[0_0_250px] lg:flex-[1_0_350px] flex justify-center">
+          <img src={imgMe} alt="me" width={250} height={250} />
+        </div>
       </div>
       <div className="flex flex-col justify-center gap-6 p-8">
         <div className="p-2">

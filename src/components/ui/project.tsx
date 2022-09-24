@@ -9,7 +9,7 @@ interface ProjectInterface {
   visit?: string;
 }
 
-const Project = ({ name, tech, description, image, git, visit }: ProjectInterface) => {
+const Project: React.FC<ProjectInterface> = ({ name, tech, description, image, git, visit }) => {
   let imgSrc = name.toLowerCase().replace(" ", "");
   imgSrc = imgs[imgSrc as keyof typeof imgs];
 

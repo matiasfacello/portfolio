@@ -14,24 +14,35 @@ const Project: React.FC<ProjectInterface> = ({ name, tech, description, image, g
   imgSrc = imgs[imgSrc as keyof typeof imgs];
 
   return (
-    <div className="p-4 border rounded-md flex-[0_1_700px]">
-      <h2 className="mb-3 text-xl font-bold text-center">{name}</h2>
+    <div className="p-6 bg-zinc-900 border shadow-md shadow-zinc-700 border-zinc-800 hover:bg-zinc-800 md:hover:scale-105 md:hover:z-10 transition backdrop-blur rounded-md flex-[0_1_400px]">
+      {image && <img src={imgSrc} width="368" height="250" alt={name} className="mb-6 rounded-md" />}
+
+      <h2 className="my-3 text-3xl font-bold text-center underline underline-offset-4">
+        <a href={visit} target="_blank" className="transition hover:text-yellow-400">
+          {name}
+        </a>
+      </h2>
       <div className="flex flex-wrap md:flex-nowrap">
         <div className="p-2">
-          {tech && <p className="mb-3 italic text-md">Tech: {tech}</p>}
-          <p className="mb-3 text-md">Description: {description}</p>
+          {tech && (
+            <p className="mb-3 italic font-md text-md">
+              <strong>Tech:</strong> {tech}
+            </p>
+          )}
+          <p className="mb-3 text-md font-md">
+            <strong>Description:</strong> {description}
+          </p>
         </div>
-        {image && <img src={imgSrc} width="300" height="240" alt={name} className="p-2 rounded" />}
       </div>
 
-      <footer className="flex justify-start gap-4 p-2 my-3">
+      <footer className="flex items-end justify-center gap-4 p-2 my-3 text-sm font-bold uppercase">
         {visit && (
-          <a href={visit} className="px-6 py-2 mr-2 transition border rounded hover:text-neutral-900 hover:bg-neutral-100" target="_blank">
+          <a href={visit} className="py-2 mr-2 text-black transition bg-yellow-400 rounded px-7 hover:bg-orange-400" target="_blank">
             View
           </a>
         )}
         {git && (
-          <a href={git} className="px-6 py-2 mr-2 transition border rounded hover:text-neutral-900 hover:bg-neutral-100" target="_blank">
+          <a href={git} className="py-2 mr-2 text-black transition bg-yellow-400 rounded px-7 hover:bg-orange-400" target="_blank">
             Code
           </a>
         )}

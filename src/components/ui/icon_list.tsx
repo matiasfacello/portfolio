@@ -4,6 +4,7 @@ import docker from "../../assets/icons/docker.svg";
 import figma from "../../assets/icons/figma.svg";
 import git from "../../assets/icons/git.svg";
 import html from "../../assets/icons/html.svg";
+import illustrator from "../../assets/icons/illustrator.svg";
 import javascript from "../../assets/icons/javascript.svg";
 import laravel from "../../assets/icons/laravel.svg";
 import lua from "../../assets/icons/lua.svg";
@@ -23,6 +24,7 @@ export default {
   figma: figma,
   git: git,
   html: html,
+  illustrator: illustrator,
   javascript: javascript,
   laravel: laravel,
   lua: lua,

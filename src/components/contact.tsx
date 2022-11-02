@@ -5,12 +5,12 @@ import { faEnvelope, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <div id="contact" className="w-full">
-      <ul className="flex flex-wrap justify-start gap-4 my-6 sm:flex-nowrap">
+      <ul className="flex flex-wrap justify-start gap-4 my-6 font-bold sm:flex-nowrap">
         <li className="flex-[0_1_100px]">
           <a
             href="mailto:matiasfacello@gmail.com"
             target="_blank"
-            className="flex flex-col items-center justify-center py-4 transition rounded hover:text-blue-300"
+            className="flex flex-col items-center justify-center py-4 text-yellow-200 transition rounded hover:text-yellow-300"
           >
             <FontAwesomeIcon icon={faEnvelope} fixedWidth size="2xl" className="pb-2" />
             Mail me!
@@ -20,7 +20,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/matias-facello"
             target="_blank"
-            className="flex flex-col items-center justify-center py-4 transition rounded hover:text-blue-300"
+            className="flex flex-col items-center justify-center py-4 text-yellow-200 transition rounded hover:text-yellow-300"
           >
             <FontAwesomeIcon icon={faLinkedin} fixedWidth size="2xl" className="pb-2" />
             LinkedIn
@@ -30,7 +30,7 @@ function Contact() {
           <a
             href="https://github.com/matiasfacello"
             target="_blank"
-            className="flex flex-col items-center justify-center py-4 transition rounded hover:text-blue-300"
+            className="flex flex-col items-center justify-center py-4 text-yellow-200 transition rounded hover:text-yellow-300"
           >
             <FontAwesomeIcon icon={faGithub} fixedWidth size="2xl" className="pb-2" />
             GitHub
@@ -40,7 +40,7 @@ function Contact() {
           <a
             href="https://files.pristineshock.com/wl/?id=kyyQwKE4GiD2DAheuzyjHy3MJ3DhipCA&fmode=open"
             target="_blank"
-            className="flex flex-col items-center justify-center py-4 transition rounded hover:text-blue-300"
+            className="flex flex-col items-center justify-center py-4 text-yellow-200 transition rounded hover:text-yellow-300"
           >
             <FontAwesomeIcon icon={faNewspaper} fixedWidth size="2xl" className="pb-2" />
             Resume

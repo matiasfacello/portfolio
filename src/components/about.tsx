@@ -1,12 +1,13 @@
 import Icon from "./ui/icon";
 import imgMe from "../assets/me.png";
+import { H1Title, H2Title } from "./ui/Titles";
 
 function About() {
   return (
     <section id="about" className="container min-h-screen px-6 m-auto">
-      <h1 className="pt-24 mt-16 text-4xl">About me</h1>
+      <H1Title text="About me" />
       <div className="flex flex-col-reverse justify-between text-center md:text-left md:flex-row md:items-start">
-        <div className="my-6 md:max-w-4xl md:pr-12">
+        <div className="my-3 text-lg md:max-w-4xl md:pr-12">
           <p className="mb-6">
             I am a young man who thinks of a solution for every problem, always trying to find the best method to achieve it. Efficiency, compromise,
             and order are the most valuable keywords in my life.
@@ -24,10 +25,10 @@ function About() {
           <img src={imgMe} alt="me" width={250} height={250} />
         </div>
       </div>
-      <div className="flex flex-col justify-center gap-6 p-8">
+      <div className="flex flex-col justify-center gap-6 p-8 font-bold">
         <div className="p-2">
-          <h2 className="p-2 text-xl text-center">Tech I use daily</h2>
-          <div className="flex flex-wrap items-center justify-center gap-2 align-center">
+          <H2Title text="Tech I use daily" />
+          <div className="flex flex-wrap justify-center gap-2 align-center">
             <Icon name="HTML" src="html" />
             <Icon name="CSS" src="css" />
             <Icon name="JavaScript" src="javascript" />
@@ -35,24 +36,26 @@ function About() {
             <Icon name="React" src="react" />
             <Icon name="PHP" src="php" />
             <Icon name="Git" src="git" />
+            <Icon name="Figma" src="figma" />
             <Icon name="Photoshop" src="photoshop" />
+            <Icon name="Illustrator" src="illustrator" />
           </div>
         </div>
         <div>
-          <h2 className="p-2 text-xl text-center">Tech I have worked with</h2>
-          <div className="flex flex-wrap items-center justify-center gap-2 align-center">
+          <H2Title text="Tech I have worked with" />
+          <div className="flex flex-wrap justify-center gap-2 align-center">
             <Icon name="Lua" src="lua" />
             <Icon name="NginX" src="nginx" />
             <Icon name="Docker" src="docker" />
-            <Icon name="bootstrap" src="bootstrap" />
+            <Icon name="Bootstrap" src="bootstrap" />
             <Icon name="Laravel" src="laravel" />
             <Icon name="WordPress" src="wordpress" />
           </div>
         </div>
         <div>
-          <h2 className="p-2 text-xl text-center">Tech I learned</h2>
-          <div className="flex flex-wrap items-center justify-center gap-2 align-center">
-            <Icon name="Node" src="nodejs" />
+          <H2Title text="Tech I learned" />
+          <div className="flex flex-wrap justify-center gap-2 align-center">
+            <Icon name="NodeJS" src="nodejs" />
             <Icon name="Svelte" src="svelte" />
           </div>
         </div>

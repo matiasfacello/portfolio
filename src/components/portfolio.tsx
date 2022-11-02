@@ -1,16 +1,26 @@
 import Project from "./ui/project";
+import { H1Title } from "./ui/Titles";
 
 function Portfolio() {
   return (
-    <section id="portfolio" className="container min-h-screen px-6 m-auto">
-      <h1 className="pt-24 mt-16 text-4xl">Portfolio</h1>
+    <section id="portfolio" className="container min-h-screen px-6 m-auto mb-32">
+      <H1Title text="Portfolio" />
       <div className="flex flex-wrap justify-center gap-8 py-6">
+        <Project
+          name="PristineShock"
+          tech="HTML, CSS, AstroJs, Svelte, PHP"
+          description="Website for my own freelance work. "
+          git="https://github.com/pristineshock/web"
+          visit="https://www.pristineshock.com"
+          image
+        />
         <Project
           name="Portfolio"
           tech="HTML, CSS, React"
           description="This website. Website made for showcasing projects and skills."
           git="https://github.com/matiasfacello/portfolio"
-          image={false}
+          visit="https://matias.pristineshock.com"
+          image
         />
         <Project
           name="FM Zurich"

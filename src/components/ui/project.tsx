@@ -7,14 +7,20 @@ interface ProjectInterface {
   image: boolean;
   git?: string;
   visit?: string;
+  className?: string;
 }
 
-const Project: React.FC<ProjectInterface> = ({ name, tech, description, image, git, visit }) => {
+const Project: React.FC<ProjectInterface> = ({ name, tech, description, image, git, visit, className }) => {
   let imgSrc = name.toLowerCase().replace(" ", "");
   imgSrc = imgs[imgSrc as keyof typeof imgs];
 
   return (
-    <div className="p-6 bg-zinc-900 border shadow-md shadow-zinc-700 border-zinc-800 hover:bg-zinc-800 md:hover:scale-105 md:hover:z-10 transition backdrop-blur rounded-md flex-[0_1_400px]">
+    <div
+      className={
+        "p-6 bg-zinc-900 border shadow-md shadow-zinc-700 border-zinc-800 hover:bg-zinc-800 md:hover:scale-105 md:hover:z-10 transition backdrop-blur rounded-md flex-[0_1_400px] " +
+        className
+      }
+    >
       {image && <img src={imgSrc} width="368" height="250" alt={name} className="mb-6 rounded-md" />}
 
       <h2 className="my-3 text-3xl font-bold text-center underline underline-offset-4">

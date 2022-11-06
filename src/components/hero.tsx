@@ -1,8 +1,14 @@
 import Contact from "./contact";
-import { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect, useEffect } from "react";
 import { gsap } from "gsap";
+import ReactGA from "react-ga4";
 
 function Hero() {
+  useEffect(() => {
+    ReactGA.initialize("G-GQ08BR7J6F");
+    ReactGA.send("pageview");
+  }, []);
+
   const elHr = useRef(null);
 
   useLayoutEffect(() => {

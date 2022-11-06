@@ -12,12 +12,12 @@ function About() {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap
-        .timeline({ scrollTrigger: { trigger: "#about" }, start: "top center" })
+        .timeline({ scrollTrigger: { trigger: "#about", start: "top center" } })
         .fromTo(".st-about-h1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, ease: "power1.out" })
         .fromTo(".st-about-text", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, ease: "power1.out" })
         .fromTo(".st-about-img", { opacity: 0, y: 30 }, { opacity: 1, y: 0, delay: 0, ease: "power1.out", duration: 1 })
         .fromTo(".st-about-h2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, ease: "power1.out", duration: 1, stagger: 1 })
-        .fromTo(".st-brand-icon", { opacity: 0, y: 30 }, { opacity: 1, y: 0, delay: -1, ease: "power1.out", stagger: 0.2 });
+        .fromTo(".st-brand-icon", { opacity: 0, y: 30 }, { opacity: 1, y: 0, delay: -1, ease: "power1.out", stagger: 0.1 });
     });
     return () => ctx.revert();
   }, []);

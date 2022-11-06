@@ -11,9 +11,9 @@ function Portfolio() {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap
-        .timeline({ scrollTrigger: { trigger: "#portfolio" }, start: "top center" })
+        .timeline({ scrollTrigger: { trigger: "#portfolio", start: "top center" } })
         .fromTo(".st-portfolio-h1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, ease: "power2.out" })
-        .fromTo(".st-portfolio-card", { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: "power3.out", duration: 0.3, stagger: 1 });
+        .fromTo(".st-portfolio-card", { opacity: 0, y: 300 }, { opacity: 1, y: 0, ease: "power3.out", duration: 1, stagger: 1, delay: 1 });
     });
     return () => ctx.revert();
   }, []);

@@ -13,16 +13,16 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 z-30 w-full h-12" ref={elNb}>
-      <div className="container flex flex-wrap items-center justify-end h-full gap-2 m-auto text-lg md:gap-6 text-zinc-100">
-        <a href="#home" className="px-2 transition link hover:text-yellow-400 active:text-yellow-400 st st-navbar-item">
-          home
+    <nav className="fixed top-0 z-30 w-full h-16" ref={elNb}>
+      <div className="container flex flex-wrap items-center justify-end h-full gap-2 m-auto font-bold md:gap-8 text-zinc-100">
+        <a href="/#home" className="px-2 transition-colors link hover:text-yellow-400 active:text-yellow-400 st st-navbar-item">
+          HOME
         </a>
-        <a href="#about" className="px-2 transition link hover:text-yellow-400 active:text-yellow-400 st st-navbar-item">
-          about me
+        <a href="/#about" className="px-2 transition-colors link hover:text-yellow-400 active:text-yellow-400 st st-navbar-item">
+          ABOUT ME
         </a>
-        <a href="#portfolio" className="px-2 transition link hover:text-yellow-400 active:text-yellow-400 st st-navbar-item">
-          portfolio
+        <a href="/#portfolio" className="px-2 transition-colors link hover:text-yellow-400 active:text-yellow-400 st st-navbar-item">
+          PORTFOLIO
         </a>
       </div>
     </nav>

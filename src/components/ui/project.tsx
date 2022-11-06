@@ -17,14 +17,14 @@ const Project: React.FC<ProjectInterface> = ({ name, tech, description, image, g
   return (
     <div
       className={
-        "p-6 bg-zinc-900 border shadow-md shadow-zinc-700 border-zinc-800 hover:bg-zinc-800 md:hover:scale-105 md:hover:z-10 transition backdrop-blur rounded-md flex-[0_1_400px] " +
+        "p-6 bg-zinc-900 border shadow-md shadow-zinc-700 border-zinc-800 hover:bg-zinc-800 transition-colors backdrop-blur rounded-md flex-[0_1_400px] " +
         className
       }
     >
       {image && <img src={imgSrc} width="368" height="250" alt={name} className="mb-6 rounded-md" />}
 
       <h2 className="my-3 text-3xl font-bold text-center underline underline-offset-4">
-        <a href={visit} target="_blank" className="transition hover:text-yellow-400">
+        <a href={visit} target="_blank" className="transition-colors hover:text-yellow-400">
           {name}
         </a>
       </h2>
@@ -43,12 +43,12 @@ const Project: React.FC<ProjectInterface> = ({ name, tech, description, image, g
 
       <footer className="flex items-end justify-center gap-4 p-2 my-3 text-sm font-bold uppercase">
         {visit && (
-          <a href={visit} className="py-2 mr-2 text-black transition bg-yellow-400 rounded px-7 hover:bg-orange-400" target="_blank">
+          <a href={visit} className="py-2 mr-2 text-black transition-colors bg-yellow-400 rounded px-7 hover:bg-orange-400" target="_blank">
             View
           </a>
         )}
         {git && (
-          <a href={git} className="py-2 mr-2 text-black transition bg-yellow-400 rounded px-7 hover:bg-orange-400" target="_blank">
+          <a href={git} className="py-2 mr-2 text-black transition-colors bg-yellow-400 rounded px-7 hover:bg-orange-400" target="_blank">
             Code
           </a>
         )}

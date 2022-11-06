@@ -12,4 +12,4 @@ Done the basics of the site.
 
 - Extras
   - [ ] Navbar - change what link is active after scroll/click
-  - [ ] Add some cool animations
+  - [x] Add some cool animations

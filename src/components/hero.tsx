@@ -17,12 +17,10 @@ function Hero() {
 
   return (
     <section id="home" className="container min-h-screen m-auto" ref={elHr}>
-      <div className="flex flex-row justify-start">
-        <div className="flex flex-col items-start justify-center min-h-screen p-16">
-          <h1 className="my-1 text-4xl md:text-8xl st st-hero-h1">Matias Facello</h1>
-          <h2 className="mb-16 text-2xl md:text-4xl st st-hero-h2">Designer / Web Developer</h2>
-          <Contact />
-        </div>
+      <div className="flex flex-col items-start justify-center min-h-screen p-16">
+        <h1 className="my-1 text-6xl md:text-8xl st st-hero-h1">Matias Facello</h1>
+        <h2 className="mb-16 text-2xl md:text-4xl st st-hero-h2">Designer / Web Developer</h2>
+        <Contact />
       </div>
     </section>
   );
